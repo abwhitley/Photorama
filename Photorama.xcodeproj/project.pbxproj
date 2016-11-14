@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9256A6D1DDA6E6A004FA7E9 /* PhotoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E9256A6C1DDA6E6A004FA7E9 /* PhotoDataSource.m */; };
+		E9256A701DDA7120004FA7E9 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9256A6F1DDA7120004FA7E9 /* PhotoCollectionViewCell.m */; };
+		E9256A731DDA73EB004FA7E9 /* PhotoInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9256A721DDA73EB004FA7E9 /* PhotoInfoViewController.m */; };
 		E9E3923C1DC7EDB400C54740 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3923B1DC7EDB400C54740 /* main.m */; };
 		E9E3923F1DC7EDB400C54740 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3923E1DC7EDB400C54740 /* AppDelegate.m */; };
 		E9E392421DC7EDB400C54740 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E392411DC7EDB400C54740 /* PhotosViewController.m */; };
@@ -38,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9256A6B1DDA6E6A004FA7E9 /* PhotoDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDataSource.h; sourceTree = "<group>"; };
+		E9256A6C1DDA6E6A004FA7E9 /* PhotoDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDataSource.m; sourceTree = "<group>"; };
+		E9256A6E1DDA7120004FA7E9 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		E9256A6F1DDA7120004FA7E9 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		E9256A711DDA73EB004FA7E9 /* PhotoInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoInfoViewController.h; sourceTree = "<group>"; };
+		E9256A721DDA73EB004FA7E9 /* PhotoInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoInfoViewController.m; sourceTree = "<group>"; };
 		E9E392371DC7EDB400C54740 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E3923B1DC7EDB400C54740 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E3923D1DC7EDB400C54740 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,10 +126,16 @@
 				E9E392731DC7F51900C54740 /* Photo.h */,
 				E9E392741DC7F51900C54740 /* Photo.m */,
 				E9E392431DC7EDB400C54740 /* Main.storyboard */,
+				E9256A6E1DDA7120004FA7E9 /* PhotoCollectionViewCell.h */,
+				E9256A6F1DDA7120004FA7E9 /* PhotoCollectionViewCell.m */,
 				E9E3926D1DC7EF6200C54740 /* FlickrAPI.h */,
 				E9E3926E1DC7EF6200C54740 /* FlickrAPI.m */,
+				E9256A6B1DDA6E6A004FA7E9 /* PhotoDataSource.h */,
+				E9256A6C1DDA6E6A004FA7E9 /* PhotoDataSource.m */,
 				E9E392701DC7F3B600C54740 /* PhotoStore.h */,
 				E9E392711DC7F3B600C54740 /* PhotoStore.m */,
+				E9256A711DDA73EB004FA7E9 /* PhotoInfoViewController.h */,
+				E9256A721DDA73EB004FA7E9 /* PhotoInfoViewController.m */,
 				E9E392461DC7EDB400C54740 /* Assets.xcassets */,
 				E9E392481DC7EDB400C54740 /* LaunchScreen.storyboard */,
 				E9E3924B1DC7EDB400C54740 /* Info.plist */,
@@ -293,7 +308,10 @@
 				E9E3923F1DC7EDB400C54740 /* AppDelegate.m in Sources */,
 				E9E3923C1DC7EDB400C54740 /* main.m in Sources */,
 				E9E392721DC7F3B600C54740 /* PhotoStore.m in Sources */,
+				E9256A701DDA7120004FA7E9 /* PhotoCollectionViewCell.m in Sources */,
+				E9256A6D1DDA6E6A004FA7E9 /* PhotoDataSource.m in Sources */,
 				E9E3926F1DC7EF6200C54740 /* FlickrAPI.m in Sources */,
+				E9256A731DDA73EB004FA7E9 /* PhotoInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +541,7 @@
 				E9E392661DC7EDB500C54740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9E392671DC7EDB500C54740 /* Build configuration list for PBXNativeTarget "PhotoramaTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +550,7 @@
 				E9E392691DC7EDB500C54740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9E3926A1DC7EDB500C54740 /* Build configuration list for PBXNativeTarget "PhotoramaUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +559,7 @@
 				E9E3926C1DC7EDB500C54740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

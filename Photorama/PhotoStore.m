@@ -52,6 +52,10 @@
                 completion:(void(^)(UIImage *))completion {
     NSParameterAssert(photo);
     NSParameterAssert(completion);
+    if (photo.image != nil) {
+        completion(photo.image);
+        return;
+    }
     NSURLRequest *request = [NSURLRequest requestWithURL:photo.remoteURL];
     NSURLSessionDataTask *task =
     [self.session dataTaskWithRequest:request
